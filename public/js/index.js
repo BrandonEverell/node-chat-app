@@ -3,10 +3,10 @@ let socket = io();
 socket.on("connect", function() {
   console.log("Connected to server");
 
-  socket.emit("createMessage", {
-    from: "Brandon",
-    text: "Yup, that works"
-  });
+//   socket.emit("createMessage", {
+//     from: "Brandon",
+//     text: "Yup, that works"
+//   });
 });
 
 socket.on('newMessage', function (message) {
